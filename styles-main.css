@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+  font-family: Arial;
+  margin: 0;
+  text-align: center;
+}
+
+/* Header/Blog Title */
+.header {
+  background: white;
+  background-image: url("muretasantos.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+  font-family: 'Merriweather', sans-serif;
+  height: 180px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* Footer */
+.footer {
+  background: #ddd;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-link {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: gray;
+}
+
+.end-logo {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
